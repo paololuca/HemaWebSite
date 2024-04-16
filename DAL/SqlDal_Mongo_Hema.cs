@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using System.Security;
 
 namespace InternalWebSiteStats.DAL
 {
@@ -20,7 +21,7 @@ namespace InternalWebSiteStats.DAL
         private string dbName = "hemasite";
 
 
-
+        [SecuritySafeCritical]
         public SqlDal_Mongo_Hema()
         {
             var settings = MongoClientSettings.FromConnectionString(connectionUri);
@@ -34,7 +35,7 @@ namespace InternalWebSiteStats.DAL
         }
 
 
-
+        [SecuritySafeCritical]
         public Tournament LoadTorunamentsDesc(int idTorneo)
         {
             
@@ -60,7 +61,7 @@ namespace InternalWebSiteStats.DAL
             else
                 return null;
         }
-
+        [SecuritySafeCritical]
         public List<Matches> LoadPoolsMatches(int idTorneo)
         {
             List<Matches> matches = new List<Matches>();
@@ -96,7 +97,7 @@ namespace InternalWebSiteStats.DAL
             return matches.OrderBy(x => x.Pool).ToList();
             
         }
-
+        [SecuritySafeCritical]
         public List<Stats> LoadStats(int idTorneo)
         {
             var statsList = new List<Stats>();

@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\PaoloLuca\Documents\source\GitHub\InternalWebSiteStats\bin\app.publish\</_PublishTargetUrl>
-    <History>True|2024-04-16T14:28:03.4694305Z;True|2024-04-16T16:14:43.2571614+02:00;True|2024-04-11T17:59:40.1833810+02:00;True|2024-04-11T17:41:33.0065807+02:00;True|2024-04-11T17:32:27.4088740+02:00;</History>
+    <History>True|2024-04-16T14:47:59.2459517Z;True|2024-04-16T16:42:28.9113212+02:00;True|2024-04-16T16:28:03.4694305+02:00;True|2024-04-16T16:14:43.2571614+02:00;True|2024-04-11T17:59:40.1833810+02:00;True|2024-04-11T17:41:33.0065807+02:00;True|2024-04-11T17:32:27.4088740+02:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -37,10 +37,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/10/2022 22:37:26</publishTime>
     </File>
     <File Include="bin/InternalWebSiteStats.dll">
-      <publishTime>04/16/2024 16:28:02</publishTime>
+      <publishTime>04/16/2024 16:47:58</publishTime>
     </File>
     <File Include="bin/InternalWebSiteStats.pdb">
-      <publishTime>04/16/2024 16:28:02</publishTime>
+      <publishTime>04/16/2024 16:47:58</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>07/30/2013 17:57:30</publishTime>
@@ -448,7 +448,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/01/2024 11:04:18</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/16/2024 16:28:03</publishTime>
+      <publishTime>04/16/2024 16:47:58</publishTime>
     </File>
   </ItemGroup>
 </Project>

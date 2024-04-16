@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
 namespace InternalWebSiteStats
 {
+    [SecuritySafeCritical]
     public class BundleConfig
     {
         // For more information on Bundling, visit https://go.microsoft.com/fwlink/?LinkID=303951
+        [SecuritySafeCritical]
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
