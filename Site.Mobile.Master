@@ -1,0 +1,49 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="InternalWebSiteStats.Site_Mobile" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            width: 100%;
+            margin: 5px;
+        }
+
+        .table-condensed tr th {
+            border: 0px solid #6e7bd9;
+            color: white;
+            background-color: #6e7bd9;
+        }
+
+        .table-condensed, .table-condensed tr td {
+            border: 0px solid #000;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f7ff
+        }
+
+        tr:nth-child(odd) {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>HemaTournament results</h1>
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+            <friendlyUrls:ViewSwitcher runat="server" />
+        </div>
+    </form>
+</body>
+</html>
