@@ -97,6 +97,7 @@ namespace InternalWebSiteStats.DAL
             return matches.OrderBy(x => x.Pool).ToList();
             
         }
+
         [SecuritySafeCritical]
         public List<Stats> LoadStats(int idTorneo)
         {
